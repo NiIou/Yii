@@ -82,6 +82,25 @@
             <div class="content"><?= nl2br(htmlspecialchars(StringHelper::truncate($item['content'], 200))); ?></div>
         </div>
     <?php endforeach; ?>
+
+    <a href="https://yii/site/index" class="custom-button">Вернутся</a>
+
+    <style>
+        .custom-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        .custom-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
 </div>
 
 </body>
